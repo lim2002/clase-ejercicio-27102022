@@ -1,0 +1,398 @@
+<style>
+    /*FUENTES*/
+@font-face {
+    font-family: "nevis";
+    src: url("fonts/nevis.eot");
+    src: url("fonts/nevis.eot?#iefix") format("embedded-opentype"),
+        url("fonts/nevis.woff") format("woff"),
+        url("fonts/nevis.ttf") format("truetype"),
+        url("fonts/nevis.svg") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "fajala";
+    src: url("fonts/FjallaOne-Regular.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "icons";
+    src: url("fonts/websymbols-regular-webfont.svg#WebSymbolsRegular") format('svg'),
+        url("fonts/websymbols-regular-webfont.eot");
+    src: url("fonts/websymbols-regular-webfont.eot?#iefix") format("embedded-opentype"),
+        url("fonts/websymbols-regular-webfont.woff") format("woff"),
+        url("fonts/websymbols-regular-webfont.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*ESTILOS GENERALES*/
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    background-image: url("../images/paven.png");
+}
+
+a{
+    color: #1e6e8e;
+    text-decoration: none;
+
+}
+
+a:visited{
+    color: #268f97;
+    
+}
+
+a:hover{
+    color: #268f97;
+    
+}
+
+.red{
+    color: #9b2422 !important;
+}
+
+.blue{
+    color: #0c73f2 !important;
+}
+
+.orange{
+    color: #d69d2a !important;
+}
+
+.green{
+    color: greenyellow !important;
+}
+
+.icon{
+    font-family: "icons";
+    float: left;
+    margin-right: 5px;
+    margin-top: -2px;
+}
+
+.clearfix{
+    float: none;
+    clear: both;
+}
+
+
+
+/*CABECERA*/
+#header{
+    min-width: 1024px;
+    width: 100%;
+    height: 250px;
+    margin: 0px auto;
+}
+
+#header a{
+    text-decoration: none;
+}
+
+#header #logotipo{
+    width: 770px;
+    margin: 0px auto;
+    padding: 20px;
+}
+
+#header #logotipo img{
+    display: block;
+    text-align: center;
+    margin: 0px auto;
+    width: 140px;
+}
+
+#header h1{
+    text-align: center;
+    font-size: 40px;
+    color: #1e6e8e;
+    font-family: "nevis";
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-top: 10px;
+    text-shadow: 0px 2px 1px #333333;
+    transition: all 300ms;
+}
+
+#header h1:hover{
+    text-shadow: 0px 2px 1px #333333, 0px 0px 4px #1e6e8e;
+}
+
+#header h1 a{
+    color: #1e6e8e;
+}
+
+/*BARRA DE NAVEGACION*/
+#nav{
+    width: 100%;
+    height: 40px;
+    background-color: #333333;
+    color: white;
+    font-family: sans-serif, Arial, Helvetica;
+    font-size: 14px;
+    box-shadow: 0px 0px 2px gray;
+}
+
+#nav ul{
+    list-style: none;
+    text-decoration: none;
+    margin: 0px auto;
+    width: 1090px;
+    padding-left: 35%;
+}
+
+#nav > ul > li{
+    line-height: 40px;
+    float: left;
+    border-right: 1px solid gray;
+    transition: all 300ms;
+}
+
+#nav > ul > li a{
+    display: block;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+#nav > ul > li > a:first-child{
+    border-left: 1px solid gray;
+}
+
+#nav > ul >li:hover{
+    background-color: #268f97;
+    box-shadow: 0px 0px 4px #1e6e8e;
+
+}
+
+/*FORMULARIOS*/
+form > div{
+    padding-top: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select{
+    border: 1px solid #C9C9C9;
+    box-shadow: 0px 0px 2px #ccc;
+    background: white;
+    padding: 1px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    color: gray;
+    transition: all 300ms;
+    width: 300px;
+}
+
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+select:focus{
+    border: 1px solid #1e6e8e;
+    color: black;
+}
+
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+button{
+    display: block;
+    border-radius: 2px;
+    border: 1px solid #268f97;
+    width: 100px;
+    padding: 3px;
+    color: white;
+    background-color: #1e6e8e;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+input[type="button"]:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+button:hover{
+    box-shadow: 0px 0px 2px gray;
+}
+
+input[type="button"]:active,
+input[type="submit"]:active,
+input[type="reset"]:active,
+button:active{
+    box-shadow: 0px 0px 3px gray inset;
+    text-shadow: 0px 0px 1px #ccc;
+}
+
+
+/*CONTENIDO*/
+#content {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 1250px;
+    min-height: 1100px;
+    margin: 0px auto;
+}
+/*SECCIONES*/
+#sections h3{
+    font-family: "fajala";
+    color: #268f97;
+}
+#sections{
+    float: right;
+    width: 95%;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 20px;
+    margin-left: 50px;
+    padding-top: 20px;
+}
+
+#sections .titulo{
+    font-family: "fajala";
+    font-size: 25px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-top: -20px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+#sections section{
+    margin-top: 40px;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 4px #c9c9c9;
+    color: #333333;
+    font-size: 16px;
+    overflow: hidden;
+}
+
+#sections .article{
+    margin: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+#sections .date{
+    color: gray;
+    font-size: 14px;
+}
+
+#sections .stickerOne,
+#sections .stickerTwo{
+    display: block;
+    position: relative;
+    border-radius: 10px;
+    margin-left: 28%;
+}
+
+#sections .sticker3,
+#sections .sticker4{
+    width: 530px;
+    display: block;
+    position: relative;
+    border-radius: 10px;
+    margin-left: 28%;
+}
+
+#sections .sticker5{
+    margin-top: 10px;
+    width: 530px;
+    display: block;
+    position: relative;
+    border-radius: 10px;
+    margin-left: 28%;
+}
+
+#history{
+    float: right;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+#sections #iframe{
+    margin-left: 20%;
+}
+
+/*PIE DE PAGINA*/
+#footer{
+    width: 100%;
+    margin: 0px auto;
+    text-align: center;
+    margin-top: 40px;
+    background-color: #333333;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    box-shadow: 0px 0px 2px grey;
+}
+
+iframe{
+    padding-left: 27%;
+}
+</style>
+   <!-- Inicio del contenido central-->
+   <div id="content">
+    <!-- Inicio de las secciones -->
+    <div id="sections">
+        <section id="contenido">
+            <h2 class="titulo">Contactanos</h2>
+            <article class="article">
+                <h3>Ubicacion</h3>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore cupiditate, commodi, totam cumque consequuntur maxime ducimus est saepe magnam similique officiis praesentium in voluptatibus unde quo, inventore esse dolorem et.
+                </p>
+            </article>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1608.2667797679246!2d-68.1582605078643!3d-16.51980634878128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x915edf770c1e6025%3A0x223e1a1b9a31fc8e!2sFERRETERIA%20CENTRAL%207!5e0!3m2!1ses!2sbo!4v1666915405880!5m2!1ses!2sbo" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <article class="article">
+                <h3>Rellena el fomulario</h3>
+            </article>
+            <form>
+                <div>
+                    <label>Correo:</label>
+                    <input type="text">
+                </div>
+                <div>
+                    <label>Nombre:</label>
+                    <input type="text">
+                </div>
+                <div>
+                    <label>Apellido</label>
+                    <input type="text">
+                </div>
+                <div>
+                    <label>Motivo</label>
+                    <input type="text" id="motivo">
+                </div>
+                <input type="submit" value="Enviar">
+            </form>
+            
+        </section>
+    </div>
+    <!-- Fin de las secciones -->
+
+    <div class="clearfix"></div>
+
+    <div id="history">
+        <a href="#">[Ver historico de noticias]</a>
+    </div>
+</div>
+<!-- Fin del contenido central -->
+
+<!-- Inicio del footer -->
+<div class="clearfix"></div>
+<!-- Fin del footer -->
