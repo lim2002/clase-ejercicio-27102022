@@ -1,6 +1,6 @@
 #Integrantes
 
-- Limbert Quispe
-- Camila Negron
-- Alvaro Jurado
-- Gabriela Portugal
+- Limbert Quispe (contactos-menu lateral)
+- Camila Negron (Home)
+- Alvaro Jurado (ABM)
+- Gabriela Portugal (Catalogo)
