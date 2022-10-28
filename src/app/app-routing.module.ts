@@ -11,6 +11,14 @@ const routes: Routes = [
     component:HomeComponent
   },
   {
+    path:'abm',
+    component:AbmComponent
+  },
+  {
+    path:'catalogo',
+    component:CatalogoComponent
+  },
+  {
     path:'contacto',
     component:ContactoComponent
   }
